@@ -16,9 +16,7 @@ export default class ProgressiveListView extends RecyclerListView<ProgressiveLis
     private renderAheadUdpateCallbackId?: number;
 
     public componentDidMount(): void {
-        if (super.componentDidMount) {
-            super.componentDidMount();
-        }
+        super.componentDidMount();
         this.updateRenderAheadProgessively(this.getCurrentRenderAheadOffset());
     }
 

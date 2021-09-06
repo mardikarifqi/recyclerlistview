@@ -13,9 +13,7 @@ export default class ViewRenderer extends BaseViewRenderer<any> {
     private _dim: Dimension = { width: 0, height: 0 };
     private _mainDiv: HTMLDivElement | null = null;
     public componentDidMount(): void {
-        if (super.componentDidMount) {
-            super.componentDidMount();
-        }
+        super.componentDidMount();
         this._checkSizeChange();
     }
 
