@@ -1,6 +1,6 @@
 {
   "name": "recyclerlistview",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "The listview that you need and deserve. It was built for performance, uses cell recycling to achieve smooth scrolling.",
   "main": "dist/reactnative/index.js",
   "types": "dist/reactnative/index.d.ts",
@@ -8,10 +8,11 @@
     "build": "run-script-os",
     "build:win32": "scripts\\build.bat",
     "build:linux": "sh scripts/build.sh",
+    "build:macos": "sh scripts/build.sh",
     "clean": "run-script-os",
     "clean:win32": "scripts\\clean.bat",
     "clean:linux": "sh scripts/clean.sh",
-    "postinstall": "npm run build"
+    "clean:macos": "sh scripts/clean.sh"
   },
   "keywords": [
     "react-native",
